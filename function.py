@@ -1,19 +1,19 @@
 #!/usr/bin/python3
 
-def calprime(n):
-    i = 1
-    c = 0
+def fahrenheit(T_in_celsius):
+    """ returns the temperature in degrees Fahrenheit """
+    return (T_in_celsius * 9 / 5) + 32
+
+for t in (22.6, 25.8, 27.3, 29.8):
+    print(t, ": ", fahrenheit(t))
     
-    for j in range(i,n):
-        
-        if n%j == 0 :
-            c = 1
-        else:
-            c = 0   
-            return c
- 
- 
- 
     
-    for k in range(1,10):       
-        print('sasasasa');
+def even_odd(n):
+    
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+for i in range(1,10):
+    print(even_odd(i))
